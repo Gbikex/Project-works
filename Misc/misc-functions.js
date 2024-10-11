@@ -13,10 +13,25 @@ const reverseString = function(inputString ) {
     result += inputToSplit[i];
    }
   }
-  return result;
 
 //Solution 2
 /*
   return string.split("").reverse().join("");
 */
+
+//////////////////////////////////////////////////
+
+// Repeat string function
+
+const repeatString = function(string,num) {
+  
+  string ='hey';
+  num = 3;
+  let result = '';
+
+  for (let i = 1; i <= num; i++){
+   result += string;
+
+};
+
 //////////////////////////////////////////////////
