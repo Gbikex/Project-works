@@ -9,8 +9,8 @@ const reverseString = function(inputString ) {
 
   for (let i = inputToSplit.length -1; i >= 0;i--){
     result += inputToSplit[i];
+   }
   }
-
   return result;
 
   /////////////////////////////////////////////////
