@@ -35,3 +35,22 @@ const repeatString = function(string,num) {
   };
   }
 //////////////////////////////////////////////////
+
+// Removes one value from an array
+
+const removeFromArray = function(str,nm) {
+
+  let splice = '';
+
+  nm  = 3;
+  str = [1, 2, 3, 4];
+  
+  for (let i = 0; i <= str.length; i++){
+     if (str[i] === nm ){
+      splice = str.splice(i,1);
+      return str;
+    }
+  }
+};
+
+//////////////////////////////////////////////////
