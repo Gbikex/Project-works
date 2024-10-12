@@ -75,3 +75,29 @@ const removeFromArray2 = function(str,nm) {
 };
 
 //////////////////////////////////////////////////
+
+//Add function remove same value multiple times from array
+
+const removeFromArray3 = function(str,nm) {
+
+  let splice = '';
+
+  nm  = 2;
+  str = [1, 2, 2, 2, 3];
+  let cnt = 0;
+
+  for (let i = 0;i <= str.length; i++) {
+    if (str[i] === 2){
+      cnt ++;
+    }
+  }
+  
+  for (let i = 0;i <= str.length; i++) {
+    if (str[i] === nm){
+        splice = str.splice(i,cnt);
+        return str;
+    }
+  };
+};
+
+//////////////////////////////////////////////////
