@@ -54,3 +54,24 @@ const removeFromArray = function(str,nm) {
 };
 
 //////////////////////////////////////////////////
+
+// Removes two value from an array
+
+
+const removeFromArray2 = function(str,nm) {
+
+  let splice = '';
+
+  nm  = 2;
+  nm2 = 3;
+  str = [1, 2, 3, 4];
+  
+  for (let i = 0; i <= str.length; i++){
+     if (str[i] === nm || str[i] === nm2){
+      splice = str.splice(i,2);
+      return str;
+    }
+  }
+};
+
+//////////////////////////////////////////////////
