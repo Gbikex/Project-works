@@ -78,56 +78,37 @@ const removeFromArray2 = function(str,nm) {
 
 //Add function remove same value multiple times from array
 
-const removeFromArray3 = function(str,nm) {
-
-  let splice = '';
-
-  nm  = 2;
-  str = [1, 2, 2, 2, 3];
-  let cnt = 0;
-
-  for (let i = 0;i <= str.length; i++) {
-    if (str[i] === 2){
-      cnt ++;
-    }
-  }
-  
-  for (let i = 0;i <= str.length; i++) {
-    if (str[i] === nm){
-        splice = str.splice(i,cnt);
-        return str;
-    }
-  };
-};
-
-//////////////////////////////////////////////////
-
-//returns the sum of every integer between 2 param
-
 const sumAll = function(nm,nm1) {
 
   let sumAll = 0;
   let result = 0;
-  nm = 1;
-  nm1 = 4000;
 
-  if (nm > nm1) {
-    nm = [nm1, nm1 = nm][0];
-  };
+  nm = 10;
+  nm1 = [90, 1];
+ 
+  if (nm < 0 || nm1 < 0) {
+    result = 'ERROR';
+  } else if (Number.isInteger(nm) !== true || Number.isInteger(nm1) !== true) {
+    result = 'ERROR';
+  }
+  
+  else{
+  
+    if (nm > nm1) {
+        nm = [nm1, nm1 = nm][0];
+    };  
 
-  for (let i = nm; i <= nm1 ; i++) {
-    if (nm <= nm1) {
+    for (let i = nm; i <= nm1 ; i++) {
+      if (nm <= nm1) {
      
-      sumAll += nm;
-      result += sumAll;
-      //sumAll += sumAll;
-      //console.log(sumAll);
-      //console.log(result);
+        sumAll += nm;
+        result += sumAll;
 
+      }
     }
   };
+
   return result;
 
 };
-
 //////////////////////////////////////////////////
