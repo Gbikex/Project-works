@@ -111,6 +111,10 @@ const sumAll = function(nm,nm1) {
   nm = 1;
   nm1 = 4000;
 
+  if (nm > nm1) {
+    nm = [nm1, nm1 = nm][0];
+  };
+
   for (let i = nm; i <= nm1 ; i++) {
     if (nm <= nm1) {
      
