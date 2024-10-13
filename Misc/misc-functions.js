@@ -101,3 +101,29 @@ const removeFromArray3 = function(str,nm) {
 };
 
 //////////////////////////////////////////////////
+
+//returns the sum of every integer between 2 param
+
+const sumAll = function(nm,nm1) {
+
+  let sumAll = 0;
+  let result = 0;
+  nm = 1;
+  nm1 = 4000;
+
+  for (let i = nm; i <= nm1 ; i++) {
+    if (nm <= nm1) {
+     
+      sumAll += nm;
+      result += sumAll;
+      //sumAll += sumAll;
+      //console.log(sumAll);
+      //console.log(result);
+
+    }
+  };
+  return result;
+
+};
+
+//////////////////////////////////////////////////
