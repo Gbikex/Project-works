@@ -111,4 +111,26 @@ const sumAll = function(nm,nm1) {
   return result;
 
 };
+
+//////////////////////////////////////////////////
+
+//Add up values in an array
+
+const sum = function(arr) {
+
+  arr =[1,3,5,7,9];
+
+  let result = 0;
+
+  for (let i= 0; i < arr.length ; i++ ) {
+
+    result += arr[i];
+    console.log(result);
+
+  }
+  return result;
+
+
+};
+
 //////////////////////////////////////////////////
