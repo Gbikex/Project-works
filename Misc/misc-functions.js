@@ -134,3 +134,24 @@ const sum = function(arr) {
 };
 
 //////////////////////////////////////////////////
+
+//Multiplication of numbers in an array
+
+const multiply = function(arr) {
+
+  arr = [2, 4, 6, 8, 10, 12, 14];
+
+  let result = 1;
+
+  for (let i = 0; i < arr.length; i++) {
+
+    result *= arr[i];
+    console.log(result);
+ 
+  }
+
+  return result;
+
+};
+
+//////////////////////////////////////////////////
