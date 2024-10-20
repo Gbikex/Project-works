@@ -155,3 +155,26 @@ const multiply = function(arr) {
 };
 
 //////////////////////////////////////////////////
+
+// Calculate factorial
+const factorial = function(factNum) {
+	
+  factNum = 10;
+  result = 1;
+
+  if (factNum === 0 || factNum === 1 ){
+    return 1;
+  }else {
+    for(let i = 1; i < factNum; i++) {
+
+    result *= i;
+  
+    }
+  
+    return factNum * result;
+
+  }
+
+};
+
+//////////////////////////////////////////////////
