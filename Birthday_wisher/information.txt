@@ -1,0 +1,8 @@
+A simple date based birthday wisher that can look up from a
+csv/txt file the person name,birth date and email.
+
+-- If the current date matches the birth date email is sent.
+-- The program select a random template from a folder.
+
+NOTE:
+-- Comparison part of the dates not perfect re-work is needed.
